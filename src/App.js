@@ -1,37 +1,17 @@
+import React from "react";
+
 import "./App.scss";
+//component
+import AppBar from "components/AppBar/AppBar";
+import BoardBar from "components/BoardBar/BoardBar";
+import BoardContent from "components/BoardContent/BoardContent";
 
 function App() {
   return (
     <div className="web-trello">
-      <nav className="navbar app">App Bar</nav>
-      <nav className="navbar board">Board Bar</nav>
-      <div className="board-columns">
-        <div className="column">
-          <header> BrainStorm</header>
-          <ul>
-            <li>
-              <img src="logo192.png" alt="web-alt-img"></img>
-              Title: 1234
-            </li>
-            <li>This list has the List Limits Power-up enabled.</li>
-            <li>This list has the List Limits Power-up enabled.</li>
-          </ul>
-          <footer>Add another card</footer>
-        </div>
-
-        <div className="column">
-          <header> BrainStorm</header>
-          <ul>
-            <li>
-              <img src="logo192.png" alt="web-alt-img"></img>
-              Title: 1234
-            </li>
-            <li>This list has the List Limits Power-up enabled.</li>
-            <li>This list has the List Limits Power-up enabled.</li>
-          </ul>
-          <footer>Add another card</footer>
-        </div>
-      </div>
+      <AppBar />
+      <BoardBar />
+      <BoardContent />
     </div>
   );
 }

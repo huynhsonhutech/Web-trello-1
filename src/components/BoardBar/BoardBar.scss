@@ -1,0 +1,13 @@
+@import "../../setting";
+
+$font: #ffd154;
+$board-bg-color: #3d3d3d;
+
+.navbar-board {
+  padding-left: $gap;
+  display: flex;
+  align-items: center;
+  color: $font;
+  background-color: $board-bg-color;
+  font-size: 1.3rem;
+}

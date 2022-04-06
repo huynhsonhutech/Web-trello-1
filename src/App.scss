@@ -1,8 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600");
-
-$appbar-bg-color: #ddaba7;
-$board-bg-color: white;
-$gap: 10px;
+@import "setting";
 
 body {
   margin: 0;
@@ -16,31 +12,4 @@ body {
   display: grid;
   grid-template-rows: 40px 50px 1fr;
   background-color: $board-bg-color;
-
-  .navbar {
-    padding-left: $gap;
-    display: flex;
-    align-items: center;
-
-    &.app {
-      background-color: $appbar-bg-color;
-      font-size: 1.5rem;
-    }
-
-    &.board {
-      background-color: $appbar-bg-color;
-      font-size: 1.3rem;
-    }
-  }
-
-  .board-columns {
-    display: flex;
-    overflow-x: auto;
-
-    .columns {
-      flex: 0 0 auto;
-      width: 300px;
-      height: calc(100% - #{$gap});
-    }
-  }
 }
